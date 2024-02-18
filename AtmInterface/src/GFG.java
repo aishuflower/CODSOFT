@@ -9,8 +9,7 @@ public class GFG {
 	} 
 
 	
-	public static int amountWithdrawing(int balance, 
-										int withdrawAmount) 
+	public static int amountWithdrawing(int balance, int withdrawAmount) 
 	{ 
 		System.out.println("Withdrawn Operation:"); 
 		System.out.println("Withdrawing Amount : "
@@ -29,15 +28,12 @@ public class GFG {
 	} 
 
 	 
-	public static int amountDepositing(int balance, 
-									int depositAmount) 
+	public static int amountDepositing(int balance, int depositAmount) 
 	{ 
 		System.out.println("Deposit Operation:"); 
-		System.out.println("Depositing Amount : "
-						+ depositAmount); 
+		System.out.println("Depositing Amount : "+ depositAmount); 
 		balance = balance + depositAmount; 
-		System.out.println( 
-			"Your Money has been successfully deposited"); 
+		System.out.println( "Your Money has been successfully deposited"); 
 		displayBalance(balance); 
 		return balance; 
 	} 
@@ -51,8 +47,9 @@ public class GFG {
 		
 		displayBalance(balance); 
 		 
-		balance 
-			= amountWithdrawing(balance, withdrawAmount); 
+		balance = amountWithdrawing(balance, withdrawAmount); 
+	}
+}
 		 
 		balance = amountDepositing(balance, depositAmount); 
 	} 
