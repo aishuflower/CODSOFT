@@ -51,6 +51,4 @@ public class GFG {
 	}
 }
 		 
-		balance = amountDepositing(balance, depositAmount); 
-	} 
-}
+		
