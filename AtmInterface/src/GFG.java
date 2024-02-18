@@ -12,12 +12,10 @@ public class GFG {
 	public static int amountWithdrawing(int balance, int withdrawAmount) 
 	{ 
 		System.out.println("Withdrawn Operation:"); 
-		System.out.println("Withdrawing Amount : "
-						+ withdrawAmount); 
+		System.out.println("Withdrawing Amount : "+ withdrawAmount); 
 		if (balance >= withdrawAmount) { 
 			balance = balance - withdrawAmount; 
-			System.out.println( 
-				"Please collect your money and collect the card"); 
+			System.out.println("Please collect your money and collect the card"); 
 			displayBalance(balance); 
 		} 
 		else { 
