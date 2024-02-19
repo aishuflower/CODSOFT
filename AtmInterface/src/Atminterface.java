@@ -1,5 +1,5 @@
 import java.io.*; 
-public class GFG { 
+public class Atminterface { 
 
 	
 	public static void displayBalance(int balance) 
@@ -15,7 +15,7 @@ public class GFG {
 		System.out.println("Withdrawing Amount : "+ withdrawAmount); 
 		if (balance >= withdrawAmount) { 
 			balance = balance - withdrawAmount; 
-			System.out.println("Please collect your money and collect the card"); 
+			System.out.println( "Please collect your money and collect the card"); 
 			displayBalance(balance); 
 		} 
 		else { 
@@ -38,15 +38,15 @@ public class GFG {
 
 	public static void main(String args[]) 
 	{ 
-		int balance = 10000; 
-		int withdrawAmount = 5000; 
-		int depositAmount = 2000; 
+		int balance = 20000; 
+		int withdrawAmount = 7000; 
+		int depositAmount = 3000; 
 
 		
 		displayBalance(balance); 
 		 
 		balance = amountWithdrawing(balance, withdrawAmount); 
-	}
-}
 		 
-		
+		balance = amountDepositing(balance, depositAmount); 
+	} 
+}
